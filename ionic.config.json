@@ -1,0 +1,7 @@
+{
+  "name": "WebXR",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
