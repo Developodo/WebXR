@@ -1,20 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      WebXR (ThreeJS + Angular + Ionic)
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<div class="item">
+  <img alt="" src="assets/models/chair.png" class="avatar" />
+  <div style="display:inline-block;padding:2px;">Silla de escritorio</div>
+   <app-ar-object *ngIf="loaded" model="assets/models/chair.gltf" measures="[1.0,1.0,1.2]"></app-ar-object>
+   <app-threed-object *ngIf="loaded" model="assets/models/chair.gltf"></app-threed-object>
+</div>
+<div class="item">
+  <img alt="" src="assets/models/dog.png" class="avatar"/>
+  <div style="display:inline-block;padding:2px;">Perrito sorpresa</div>
+<app-ar-object *ngIf="loaded" model="assets/models/dog.gltf" measures="[1.2,0.30,1.0]"></app-ar-object>
+<app-threed-object *ngIf="loaded" model="assets/models/dog.gltf"></app-threed-object>
+</div>
+
 </ion-content>
+<ion-footer style="text-align:center">Developed by Carlos Serrano @2022</ion-footer>

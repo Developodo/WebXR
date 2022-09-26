@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { ArObjectComponent } from '../ar-object/ar-object.component';
+import { ThreedObjectComponent } from '../threed-object/threed-object.component';
 
 
 @NgModule({
@@ -14,6 +16,6 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,ArObjectComponent,ThreedObjectComponent]
 })
 export class HomePageModule {}
