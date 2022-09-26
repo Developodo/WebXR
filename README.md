@@ -23,7 +23,7 @@ This project was created using Ionic over Angular to explore WebXR capabilities 
 				
 			Thanks to https://github.com/tentone to help with his code to explore depth calculation and shaders.
 			
-			An working example can be find [here](https://webxr-efd50.firebaseapp.com/home)
 ```	
+			An working example can be found [here](https://webxr-efd50.firebaseapp.com/home)
 	
 
